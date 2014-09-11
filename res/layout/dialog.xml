@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <TextView android:text="Welcome to the Grid-Grid game.  The rule of the game is very simple First-> Locate the guy with no mask (you) . Second-> located the other guy, the one with the  mask lol (android).  Your goal is to reach the GREEN circle before the guy with the mask catch , be careful because you can only move on the yellow circle and also you can only move horizontal and vertical.   PRESS HOMER TO START THE GAME.  HAVE FUN !!."  
+                         
+            android:id="@+id/TextView01"
+            android:layout_width="1006px" 
+            android:layout_height="wrap_content"
+            android:textColor="#ffff00" />
+ 
+   <Button android:id="@+id/dialogbutton" 
+           android:layout_below="@id/TextView01"
+           android:layout_width="wrap_content" 
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true" 
+           android:textColor="#ffff00" 
+           android:background="@drawable/playbutton2"/>
+
+</LinearLayout>

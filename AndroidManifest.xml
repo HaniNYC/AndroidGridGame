@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gridcapstone"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gridicon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black" 
+        android:background="@drawable/background7"
+        >
+        
+        
+        
+         <!-- idea for adding diff backgound  android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >-->
+        <activity
+            android:name="com.example.gridcapstone.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.gridcapstone.LEVELS"
+            android:label="@string/app_name" >
+            </activity>
+            
+         <activity
+            android:name="EASY"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.example.gridcapstone.EASY" 
+                    android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+                    />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.SPLASHSCREEN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="MED"
+            android:label="@string/app_name" 
+            android:theme="@style/AppTheme"
+            android:background="@drawable/ocean1"
+            >
+            <intent-filter>
+                <action android:name="com.example.gridcapstone.MED" />
+                <category android:name="android.intent.category.DEFAULT" 
+                     android:background="@drawable/ocean1"
+                   />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="extreme"
+            android:label="@string/app_name" 
+            android:theme="@style/AppTheme"
+            android:background="@drawable/ocean1"
+            >
+            <intent-filter>
+                <action android:name="com.example.gridcapstone.EXTREME" />
+                <category android:name="android.intent.category.DEFAULT" 
+                     android:background="@drawable/ocean1"
+                   />
+            </intent-filter>
+        </activity>
+    </application>
+    
+
+</manifest>

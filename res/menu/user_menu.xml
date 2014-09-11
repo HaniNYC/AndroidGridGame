@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+
+    <!--  This is going to be a menu the will be implement it in settings menu ,where the user
+    can choose between levels , change the backgorund of the app -->
+    <item
+        android:id="@+id/menu"
+        android:orderInCategory="100"
+       
+        android:title="Menu"
+     
+         >
+
+ <menu>
+     <item android:id="@+id/background"
+        android:title="Background"
+       
+        />
+ 
+ 
+  <item android:id="@+id/rate"
+        
+       	android:title="Rate this app" />
+  
+ 
+        </menu>
+    </item>
+      
+    <!--  This implemention is for the levels of the game  -->
+    
+     <item
+        android:id="@+id/levels"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Levels"
+        >
+
+ <menu>
+     <item android:id="@+id/easy"
+        android:title="Easy"
+        android:showAsAction="always"
+         />
+ 
+ 
+  <item android:id="@+id/medium "
+        android:showAsAction="always"
+       	android:title="Medium " />
+  
+  
+  <item android:id="@+id/extreme"
+        android:title="Extreme"
+        android:showAsAction="always"
+       />
+  
+    
+        </menu>
+    </item>
+    
+      
+    
+    
+</menu>
